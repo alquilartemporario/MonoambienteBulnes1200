@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monoambiente amoblado en Almagro | Alquiler temporario en Buenos Aires</title>
+<meta name="description" content="Monoambiente amoblado de 34 m² en Almagro, Buenos Aires. Para 2 personas, con pileta, co-working, SUM y parrilla. Contratos de 3 a 12 meses. USD 500 por mes + expensas. Ingreso inmediato.">
+<meta property="og:title" content="Monoambiente amoblado en Almagro · USD 500/mes">
+<meta property="og:description" content="Tu hogar temporal en Buenos Aires. Pileta con vista, co-working y wifi incluido. Contratos de 3 a 12 meses.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6efe6;--card:#fff;--ink:#2b2420;--muted:#5b4f47;--accent:#b5562f;--accent-d:#963f1f;--wa:#1faa53;--line:#e6dccf}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px;padding-bottom:84px}
+img{display:block;max-width:100%}
+h1,h2,.serif{font-family:Lora,Georgia,serif;line-height:1.15}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+section{padding:48px 0}
+h2{font-size:clamp(26px,4vw,36px);margin:8px 0 18px}
+
+/* hero */
+.hero{padding:28px 0 8px}
+.hero h1{font-size:clamp(32px,6vw,54px);margin:10px 0 14px}
+.hero p.lead{font-size:clamp(16px,2.2vw,19px);color:var(--muted);max-width:640px}
+.who{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
+.who span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:500}
+.hero-img{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;max-height:560px;width:100%}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;right:14px;top:14px;background:var(--accent);color:#fff;border-radius:16px;padding:10px 16px;font-weight:700;font-size:22px;line-height:1.1;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.badge small{display:block;font-weight:400;font-size:12px;opacity:.9}
+.tag-live{position:absolute;left:14px;top:14px;background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600}
+.tag-live::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--wa);margin-right:7px;vertical-align:1px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;border-radius:14px;padding:15px 24px;font-size:17px;transition:transform .15s,background .15s}
+.btn:hover{background:#178f45;transform:translateY(-1px)}
+.btn svg{width:22px;height:22px;fill:#fff}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+.fact{background:var(--card);border-radius:16px;padding:16px;border:1px solid var(--line)}
+.fact b{display:block;font-size:20px}
+.fact span{font-size:13px;color:var(--muted)}
+@media(min-width:760px){.facts{grid-template-columns:repeat(4,1fr)}}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gallery button{border:0;padding:0;background:none;cursor:zoom-in;border-radius:14px;overflow:hidden;position:relative;aspect-ratio:1}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery button span{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:3px 9px;border-radius:999px}
+@media(min-width:760px){.gallery{grid-template-columns:repeat(4,1fr)}.gallery button.big{grid-column:span 2;grid-row:span 2}}
+
+/* two col lists */
+.cols{display:grid;gap:14px}
+@media(min-width:760px){.cols{grid-template-columns:1fr 1fr}}
+.box{background:var(--card);border-radius:20px;padding:22px;border:1px solid var(--line)}
+.box h3{font-size:18px;margin-bottom:10px}
+.box ul{list-style:none}
+.box li{padding:7px 0 7px 30px;position:relative;border-bottom:1px dashed var(--line)}
+.box li:last-child{border-bottom:0}
+.box li::before{content:"✓";position:absolute;left:4px;color:var(--accent);font-weight:700}
+
+/* price */
+.price-card{background:var(--ink);color:var(--bg);border-radius:24px;padding:26px}
+.price-card .big{font-size:clamp(40px,7vw,56px);font-weight:700;line-height:1}
+.price-card table{width:100%;border-collapse:collapse;margin-top:18px}
+.price-card td{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:15px}
+.price-card td:last-child{text-align:right;font-weight:600}
+.note{font-size:13px;opacity:.75;margin-top:12px}
+
+/* steps */
+.steps{counter-reset:s;display:grid;gap:12px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:var(--card);border-radius:20px;padding:22px;border:1px solid var(--line);position:relative}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;margin-bottom:10px}
+.step h3{font-size:17px;margin-bottom:6px}
+.step p{font-size:15px;color:var(--muted)}
+.help{margin-top:14px;background:#fbe9df;border-radius:18px;padding:18px 20px;font-size:15px}
+
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;list-style:none}
+summary::after{content:"+";float:right;color:var(--accent);font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:8px;color:var(--muted);font-size:15px}
+
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);height:300px;margin-top:14px}
+.map iframe{width:100%;height:100%;border:0}
+
+.final{text-align:center;background:var(--card);border-radius:28px;padding:36px 20px;border:1px solid var(--line)}
+.final p{color:var(--muted);max-width:520px;margin:0 auto}
+footer{text-align:center;font-size:13px;color:var(--muted);padding:26px 0 10px}
+
+/* sticky bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(246,239,230,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;z-index:20}
+.sticky .wrap{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:0}
+.sticky .p{font-size:13px;line-height:1.25}
+.sticky .p b{font-size:18px;display:block}
+.sticky .btn{padding:12px 18px;font-size:15px;flex-shrink:0}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(15,10,8,.94);display:none;align-items:center;justify-content:center;z-index:50}
+.lb.on{display:flex}
+.lb img{max-width:94vw;max-height:84vh;border-radius:10px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;font-size:30px;width:48px;height:48px;border-radius:50%;cursor:pointer}
+.lb .x{top:16px;right:16px;font-size:24px}
+.lb .prev{left:10px;top:50%;transform:translateY(-50%)}
+.lb .next{right:10px;top:50%;transform:translateY(-50%)}
+.lb .cap{position:absolute;bottom:18px;color:#fff;font-size:14px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Alquiler temporario · Almagro, Buenos Aires</div>
+    <h1>¿Vas a estar unos meses en Buenos Aires?</h1>
+    <p class="lead">Ayudamos a personas de todo el mundo a encontrar su próximo hogar temporal en la ciudad. Hoy te recomendamos este monoambiente amoblado, listo para entrar a vivir.</p>
+    <div class="who"><span>🎓 Estudiantes universitarios</span><span>🩺 Médicos residentes</span><span>💼 Profesionales</span><span>🌎 Estadías de meses</span></div>
+    <div class="hero-img">
+      <img src="img/living.jpg" alt="Monoambiente amoblado en Almagro con cama, mesa alta y balcón">
+      <div class="tag-live">Ingreso inmediato</div>
+      <div class="badge">USD 500<small>por mes + expensas</small></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>34 m²</b><span>Monoambiente con balcón</span></div>
+      <div class="fact"><b>2 personas</b><span>Totalmente amoblado</span></div>
+      <div class="fact"><b>3 a 12 meses</b><span>Duración del contrato</span></div>
+      <div class="fact"><b>Wifi incluido</b><span>Lavarropas en la unidad</span></div>
+    </div>
+    <div class="ctas">
+      <a class="btn wa" href="#" data-msg="Hola! Vi el monoambiente de Almagro y quiero consultar disponibilidad."><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>Consultar por WhatsApp</a>
+      <a class="btn ghost" href="#fotos">Ver todas las fotos</a>
+    </div>
+  </div>
+</header>
+
+<section id="fotos">
+  <div class="wrap">
+    <div class="kicker">Fotos</div>
+    <h2>Así es el depto y el edificio</h2>
+    <div class="gallery" id="gallery">
+      <button class="big" data-i="0"><img src="img/living.jpg" alt="Ambiente principal" loading="lazy"><span>Ambiente principal</span></button>
+      <button data-i="1"><img src="img/living2.jpg" alt="Living con sillón y TV" loading="lazy"><span>Living</span></button>
+      <button data-i="2"><img src="img/cama.jpg" alt="Sector dormitorio" loading="lazy"><span>Dormitorio</span></button>
+      <button data-i="3"><img src="img/cocina.jpg" alt="Cocina equipada" loading="lazy"><span>Cocina</span></button>
+      <button data-i="4"><img src="img/bano.jpg" alt="Baño completo" loading="lazy"><span>Baño</span></button>
+      <button data-i="5"><img src="img/balcon.jpg" alt="Balcón con mesa" loading="lazy"><span>Balcón</span></button>
+      <button data-i="6"><img src="img/pileta.jpg" alt="Pileta con vista panorámica" loading="lazy"><span>Pileta</span></button>
+      <button data-i="7"><img src="img/cowork.jpg" alt="Co-working del edificio" loading="lazy"><span>Co-working</span></button>
+      <button data-i="8"><img src="img/parrilla.jpg" alt="Parrilla en terraza" loading="lazy"><span>Parrilla</span></button>
+      <button data-i="9"><img src="img/hall.jpg" alt="Hall de entrada" loading="lazy"><span>Hall de entrada</span></button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Qué incluye</div>
+    <h2>Llegás con la valija y empezás a vivir</h2>
+    <div class="cols">
+      <div class="box">
+        <h3>🛋️ El departamento</h3>
+        <ul>
+          <li>Monoambiente de 34 m² para 2 personas</li>
+          <li>Totalmente amoblado y equipado</li>
+          <li>Cocina completa con heladera y horno</li>
+          <li>Lavarropas en la unidad</li>
+          <li>Aire acondicionado y Smart TV</li>
+          <li>Wifi incluido</li>
+          <li>Balcón</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>🏙️ El edificio</h3>
+        <ul>
+          <li>Pileta con vista panorámica</li>
+          <li>Co-working para estudiar o trabajar</li>
+          <li>SUM</li>
+          <li>Parrilla</li>
+          <li>Espacios comunes de categoría</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Precio</div>
+    <h2>Claro y sin letra chica</h2>
+    <div class="price-card">
+      <div class="big">USD 500 <span style="font-size:18px;font-weight:400">/ mes</span></div>
+      <table>
+        <tr><td>Alquiler mensual</td><td>USD 500</td></tr>
+        <tr><td>Expensas (aprox.)</td><td>$240.000</td></tr>
+        <tr><td>Wifi</td><td>Incluido</td></tr>
+        <tr><td>Luz</td><td>Según consumo</td></tr>
+      </table>
+      <p class="note">El valor de las expensas es aproximado y puede variar mes a mes.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Cómo entrar</div>
+    <h2>El ingreso es muy simple</h2>
+    <div class="steps">
+      <div class="step"><h3>Tu documentación</h3><p>DNI o pasaporte, y demostración de ingresos. Si sos estudiante, también la constancia de estudios.</p></div>
+      <div class="step"><h3>Tu contrato</h3><p>Contratos de 3 a 12 meses, según cada caso.</p></div>
+      <div class="step"><h3>Al firmar</h3><p>Primer mes por adelantado, un mes de depósito (se reintegra al finalizar; recomendamos que sea en dólares) y un mes de honorarios (gastos administrativos y de contrato).</p></div>
+    </div>
+    <div class="help"><b>¿No sabés cómo demostrar ingresos?</b> Te ayudamos. Puede demostrarlos el propio inquilino con información de su trabajo o actividad, o sus padres o familiares que lo ayudan, desde el interior del país o desde el exterior. Lo importante es acreditar que quien paga el alquiler es solvente.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Ubicación</div>
+    <h2>Almagro: Bulnes y Av. Córdoba</h2>
+    <p style="color:var(--muted)">Un barrio residencial y bien conectado, en el centro de la ciudad.</p>
+    <div class="map"><iframe loading="lazy" title="Mapa de la ubicación" src="https://www.google.com/maps?q=Bulnes+1200,+Almagro,+Buenos+Aires&output=embed"></iframe></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Preguntas frecuentes</div>
+    <h2>Lo que más nos consultan</h2>
+    <details><summary>¿Cuándo puedo entrar?</summary><p>El departamento está disponible para ingreso inmediato. Escribinos con tu fecha de llegada y lo coordinamos.</p></details>
+    <details><summary>¿Cuánto tiempo me puedo quedar?</summary><p>Los contratos van de 3 a 12 meses, según cada caso.</p></details>
+    <details><summary>Vengo del exterior, ¿puedo alquilar?</summary><p>Sí. Con tu pasaporte y la demostración de ingresos, tuya o de tus padres o familiares, alcanza. Te ayudamos a armar la documentación.</p></details>
+    <details><summary>¿Qué tengo que pagar al firmar?</summary><p>El primer mes por adelantado, un mes de depósito (reintegrable al terminar la estadía) y un mes de honorarios.</p></details>
+    <details><summary>¿Qué servicios están incluidos?</summary><p>El wifi está incluido. Las expensas se pagan aparte (aprox. $240.000) y la luz corre por cuenta del inquilino según consumo.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="final">
+      <div class="kicker">Ingreso inmediato</div>
+      <h2>Tu próximo hogar en Buenos Aires</h2>
+      <p>Escribinos por WhatsApp contándonos cuándo llegás y por cuántos meses. Te respondemos con disponibilidad y los próximos pasos.</p>
+      <div class="ctas" style="justify-content:center">
+        <a class="btn wa" href="#" data-msg="Hola! Vi el monoambiente de Almagro. Llego el ___ y me quedaría ___ meses. ¿Está disponible?"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>Consultar disponibilidad</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>Alquiler temporario en Buenos Aires · Monoambiente amoblado en Almagro</footer>
+
+<div class="sticky">
+  <div class="wrap">
+    <div class="p">Monoambiente en Almagro<b>USD 500/mes</b></div>
+    <a class="btn wa" href="#" data-msg="Hola! Vi el monoambiente de Almagro y quiero consultar disponibilidad."><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+  </div>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-label="Galería de fotos">
+  <button class="x" aria-label="Cerrar">✕</button>
+  <button class="prev" aria-label="Anterior">‹</button>
+  <img id="lbimg" alt="">
+  <button class="next" aria-label="Siguiente">›</button>
+  <div class="cap" id="lbcap"></div>
+</div>
+
+<script>
+// WhatsApp
+var WA = "5491168686694";
+document.querySelectorAll("a.wa").forEach(function(a){
+  a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(a.dataset.msg);
+  a.target = "_blank"; a.rel = "noopener";
+});
+// Lightbox
+var items = Array.prototype.map.call(document.querySelectorAll("#gallery button"), function(b){
+  return {src: b.querySelector("img").src, cap: b.querySelector("span").textContent};
+});
+var lb = document.getElementById("lb"), im = document.getElementById("lbimg"), cap = document.getElementById("lbcap"), cur = 0;
+function show(i){ cur = (i + items.length) % items.length; im.src = items[cur].src; im.alt = items[cur].cap; cap.textContent = items[cur].cap + " · " + (cur+1) + "/" + items.length; lb.classList.add("on"); }
+document.querySelectorAll("#gallery button").forEach(function(b){ b.addEventListener("click", function(){ show(+b.dataset.i); }); });
+lb.querySelector(".x").onclick = function(){ lb.classList.remove("on"); };
+lb.querySelector(".prev").onclick = function(e){ e.stopPropagation(); show(cur-1); };
+lb.querySelector(".next").onclick = function(e){ e.stopPropagation(); show(cur+1); };
+lb.addEventListener("click", function(e){ if(e.target === lb) lb.classList.remove("on"); });
+document.addEventListener("keydown", function(e){ if(!lb.classList.contains("on")) return; if(e.key==="Escape") lb.classList.remove("on"); if(e.key==="ArrowLeft") show(cur-1); if(e.key==="ArrowRight") show(cur+1); });
+var sx = 0; lb.addEventListener("touchstart", function(e){ sx = e.touches[0].clientX; }); lb.addEventListener("touchend", function(e){ var dx = e.changedTouches[0].clientX - sx; if(Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1)); });
+</script>
+</body>
+</html>
